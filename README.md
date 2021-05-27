@@ -2,23 +2,29 @@
 
 Emissor simples de mensagens via WhatsApp
 
+# Tecnologias
+
+• JavaScript
+
+• NodeJS com utilização da biblioteca Puppeteer
+
 ## Configurações
 
 ```
-   #Clone do projeto
-   git clone https://github.com/BrunoFerreira44/WhatsappMessageSender.git
+#Clone do projeto
+git clone https://github.com/BrunoFerreira44/WhatsappMessageSender.git
 
-   #Instalação das dependências
-   cd WhatsappMessageSender/
-   npm install
+#Instalação das dependências
+cd WhatsappMessageSender/
+npm install
 
-   #Alteração das configurações pessoais
-   No diretório "config/", editar o arquivo "properties.js" e preencher os campos com os dados desejados:
+#Alteração das configurações pessoais
+No diretório "config/", editar o arquivo "properties.js" e preencher os campos com os dados desejados:
 
-      • url = URL do WhatsApp Web (preenchido por padrão com "https://web.whatsapp.com")
-      • contactName = Nome do contato ao qual as mensagens serão enviadas
-      • message = Texto da mensagem que será enviado para o contactName
-      • amountMessages: Quantidade que a mensagem será repetida e enviada
+   • url = URL do WhatsApp Web (preenchido por padrão com "https://web.whatsapp.com")
+   • contactName = Nome do contato ao qual as mensagens serão enviadas
+   • message = Texto da mensagem que será enviado para o contactName
+   • amountMessages: Quantidade que a mensagem será repetida e enviada
 ```
 
 ## Premissas
