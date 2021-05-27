@@ -1,15 +1,10 @@
 const puppeteer = require("puppeteer");
+const USER_CONFIG = require("./config/properties");
 
 // É importante lembrar que, se o contato não estiver entre os primeiros quando a página for carregada,
 // o código provavelmente irá estourar. Isso se deve ao fato de o WhastApp não carregar toda a lista de conversas
 // uma vez que conectado.
 // Por esse motivo, a linha 18 nunca receberá uma resposta
-
-const contactName = "";
-const message = "";
-const amountMessages = 100;
-
-const url = "https://web.whatsapp.com";
 
 async function MessageSender(url) {
    //Iniciando o puppeteer e abrindo o Chromium
@@ -20,8 +15,8 @@ async function MessageSender(url) {
    await page.goto(url);
 
    //Selecionando o contato desejado
-   await page.waitForSelector(`span[title='${contactName}']`);
-   const target = await page.$(`span[title='${contactName}']`);
+   await page.waitForSelector(`span[title='${USER_CONFIG.contactName}']`);
+   const target = await page.$(`span[title='${USER_CONFIG.contactName}']`);
    await target.click();
 
    //Selecionando o campo de digitação da conversa
@@ -30,10 +25,12 @@ async function MessageSender(url) {
    );
 
    //Loop para enviar a mensagem para o contato
-   for (let i = 0; i < amountMessages; i++) {
-      await input.type(message);
+   for (let i = 0; i < USER_CONFIG.amountMessages; i++) {
+      //for (let x = 0; x < 10; x++) {
+      await input.type(USER_CONFIG.message);
+      //}
       await page.keyboard.press("Enter");
    }
 }
 
-MessageSender(url);
+MessageSender(USER_CONFIG.url);
