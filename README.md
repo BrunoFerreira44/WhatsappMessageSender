@@ -1,22 +1,24 @@
 # WhatsappMessageSender
 
-   [![NPM](https://img.shields.io/npm/l/react)](https://github.com/BrunoFerreira44/WhatsappMessageSender/main/LICENSE)
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/BrunoFerreira44/WhatsappMessageSender/main/LICENSE)
 
 ## Sobre o projeto
 
-   Emissor simples de mensagens via WhatsApp
+Emissor simples de mensagens via WhatsApp
 
 ## Tecnologias
 
-   • JavaScript
+• JavaScript
 
-   • NodeJS com utilização da biblioteca Puppeteer
+• NodeJS com utilização da biblioteca Puppeteer
 
 ## Configurações
 
 ```
-   #Clone do projeto
+   #Clone e instalação do projeto
       git clone https://github.com/BrunoFerreira44/WhatsappMessageSender.git
+      cd WhatsappMessageSender/
+      yarn start
 
    #Instalação das dependências
       cd WhatsappMessageSender/
@@ -33,7 +35,7 @@
 
 ## Premissas
 
-   É importante ressaltar que: O código só irá funcionar se o contato escolhido
+É importante ressaltar que: O código só irá funcionar se o contato escolhido
 para enviar as mensagens estiver entre os primeiros da sua lista de conversas
 quando o WhatsApp Web for aberto. Isso se dá pelo motivo de a página não
 carregar a lista inteira de uma vez, apenas conforme o scroll. Por este motivo,
@@ -41,6 +43,6 @@ não é possível identificar a propriedade CSS que carrega o nome do contato.
 
 ## Autor
 
-   Bruno Ferreira
+Bruno Ferreira
 
-   LinkedIn: https://www.linkedin.com/in/brunoferreira3003/
+LinkedIn: https://www.linkedin.com/in/brunoferreira3003/
