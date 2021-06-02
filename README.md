@@ -18,11 +18,7 @@ Emissor simples de mensagens via WhatsApp
    #Clone e instalação do projeto
       git clone https://github.com/BrunoFerreira44/WhatsappMessageSender.git
       cd WhatsappMessageSender/
-      yarn start
-
-   #Instalação das dependências
-      cd WhatsappMessageSender/
-      npm install
+      yarn
 
    #Alteração das configurações pessoais
       No diretório "config/", editar o arquivo "properties.js" e preencher os campos com os dados desejados:
@@ -31,6 +27,9 @@ Emissor simples de mensagens via WhatsApp
       • contactName = Nome do contato ao qual as mensagens serão enviadas
       • message = Texto da mensagem que será enviado para o contactName
       • amountMessages: Quantidade que a mensagem será repetida e enviada
+
+   #Execução
+      yarn start
 ```
 
 ## Premissas
