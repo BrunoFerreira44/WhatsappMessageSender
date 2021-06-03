@@ -3,15 +3,12 @@
    "version": "1.0.0",
    "description": "A simple Message Sender for Whatsapp",
    "main": "index.js",
-   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-   },
    "author": "Bruno Ferreira",
    "license": "ISC",
    "dependencies": {
       "puppeteer": "^9.1.1"
    },
    "scripts": {
-      "start": "node index.js"
+      "start": "node src"
    }
 }

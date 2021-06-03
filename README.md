@@ -4,7 +4,8 @@
 
 ## Sobre o projeto
 
-Emissor simples de mensagens via WhatsApp
+Emissor de mensagens via WhatsApp que permite o envio único ou para uma lista de
+contatos
 
 ## Tecnologias
 
@@ -21,12 +22,11 @@ Emissor simples de mensagens via WhatsApp
       yarn
 
    #Alteração das configurações pessoais
-      No diretório "config/", editar o arquivo "properties.js" e preencher os campos com os dados desejados:
+      No diretório "src/config/", editar o arquivo "properties.js" e preencher os campos com os dados desejados:
 
-      • url = URL do WhatsApp Web (preenchido por padrão com "https://web.whatsapp.com")
-      • contactName = Nome do contato ao qual as mensagens serão enviadas
-      • message = Texto da mensagem que será enviado para o contactName
-      • amountMessages: Quantidade que a mensagem será repetida e enviada
+      • contactName = Vetor que carrega os contatos que receberão as mensagens
+      • message = Texto da mensagem que será enviado para o vetor de contactName
+      • amountMessages: Quantidade de vezes que a mensagem será repetida e enviada
 
    #Execução
       yarn start
@@ -34,11 +34,12 @@ Emissor simples de mensagens via WhatsApp
 
 ## Premissas
 
-É importante ressaltar que: O código só irá funcionar se o contato escolhido
-para enviar as mensagens estiver entre os primeiros da sua lista de conversas
-quando o WhatsApp Web for aberto. Isso se dá pelo motivo de a página não
-carregar a lista inteira de uma vez, apenas conforme o scroll. Por este motivo,
-não é possível identificar a propriedade CSS que carrega o nome do contato.
+É importante ressaltar que: O WhatsApp Web necessita de uma validação via QRCode
+para autorizar a entrada em sua rede social. Para isso, após executar o código,
+abra o WhatsApp em seu celular e valide o QRCode que estará aparecendo na tela.
+
+Após isso, o programa executará normalmente, e as mensagens serão entregues
+conforme configurado!
 
 ## Autor
 
