@@ -1,19 +1,19 @@
-# WhatsappMessageSender
+<h1 align="center">WhatsappMessageSender</h1>
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/BrunoFerreira44/WhatsappMessageSender/main/LICENSE)
 
-## Sobre o projeto
+## 🛠 Sobre o projeto
 
 Emissor de mensagens via WhatsApp que permite o envio único ou para uma lista de
 contatos
 
-## Tecnologias
+## 🚀 Tecnologias
 
 • JavaScript
 
 • NodeJS com utilização da biblioteca Puppeteer
 
-## Configurações
+## ⚙ Configurações
 
 ```
    #Clone e instalação do projeto
@@ -32,7 +32,7 @@ contatos
       yarn start
 ```
 
-## Premissas
+## ⚖ Premissas
 
 É importante ressaltar que: O WhatsApp Web necessita de uma validação via QRCode
 para autorizar a entrada em sua rede social. Para isso, após executar o código,
@@ -41,7 +41,7 @@ abra o WhatsApp em seu celular e valide o QRCode que estará aparecendo na tela.
 Após isso, o programa executará normalmente, e as mensagens serão entregues
 conforme configurado!
 
-## Autor
+## 🙇‍ Autor
 
 Bruno Ferreira
 
